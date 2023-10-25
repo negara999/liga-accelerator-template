@@ -1,0 +1,86 @@
+.hero {
+  position: relative;
+
+  @media (max-width: 1440px) {
+  width: 1366px;
+  height: 730px;
+  flex-shrink: 0;
+  }
+}
+
+.hero__text-prop {
+  color: #FFFFFF;
+  font-family: "Alumni", sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+}
+
+.hero__title {
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 110px;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+
+  @media (max-width: 1440px) {
+    width: 100%;
+    max-width: 270px;
+  }
+}
+
+.hero__info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 385px;
+  align-items: center;
+  height: 100%;
+  max-height: 400px;
+
+}
+
+.hero__main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.hero__specific-info {
+  color: #FFFFFF;
+  text-align: right;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  @media (max-width: 1440px) {
+    width: 100%;
+    max-width: 130px;
+  }
+}
+
+.hero__button {
+  display: flex;
+  border: 2px solid #FFFFFF;
+
+  @media (max-width: 1920px) {
+  width: 100%;
+  max-width: 230px;
+  padding: 27px 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  }
+
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}

@@ -1,0 +1,32 @@
+.header {
+  background: linear-gradient(90deg, rgb(28, 52, 119) 0px, rgb(28, 52, 119) 0.01%, rgb(26, 53, 120) 39.11%, rgb(115, 24, 75) 75.5%, rgb(180, 2, 42) 100%);
+
+  @media (max-width: 1440px) {
+    height: 100%;
+    max-height: 86px;;
+  }
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  background-size: auto;
+
+  @media (max-width: 1440px) {
+  width: 100%;
+  max-width: 1366px;
+  padding: 30px 103px;
+  align-items: center;
+  margin: 0;
+  }
+}
+
+.header__text-prop {
+  color: #FFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
