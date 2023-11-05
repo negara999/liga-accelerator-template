@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
+    <meta name="description" content="Описание проекта" />
     <title>SUPERGYM</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -14,52 +14,186 @@
         <div class="container">
           <div class="header__info">
             <h2 class="header__site-logo header__text-prop">Supergym</h2>
-            <h2 class="header__site-contacts header__text-prop">8-800-555-55-55</h2>
+            <h2 class="header__site-contacts header__text-prop">
+              8-800-555-55-55
+            </h2>
           </div>
         </div>
       </header>
       <main class="main">
         <section class="hero">
           <div class="container">
-
             <div class="hero__info">
-              <p class="hero__specific-info">Тренажёрный зал Групповые занятия Кардио-зона</p>
-            <div class="hero__feedback-info">
-              <div class="hero__main-info">
-            <h2 class="hero__city">ОМСК</h2>
-            <h1 class="hero__title">ФИТНЕС<br> ЦЕНТР</h1>
+              <p class="hero__specific-info">
+                Тренажёрный зал Групповые занятия Кардио-зона
+              </p>
+              <div class="hero__feedback-info">
+                <div class="hero__main-info">
+                  <h2 class="hero__city">ОМСК</h2>
+                  <h1 class="hero__title">
+                    ФИТНЕС<br />
+                    ЦЕНТР
+                  </h1>
+                </div>
+                <p>
+                  <a class="button btn" href="#" data-open-modal="feedback"
+                    >Купить абонемент</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="btn visually-hidden"
+                    href="#"
+                    data-open-modal="success"
+                    >modal--success link</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="hero__image">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  src="./img/tablet__slider-img.png"
+                  class="tablet__slider-image"
+                />
+                <img
+                  src="./img/slider-img.png"
+                  alt="slider-img."
+                  class="hero__picture"
+                />
+              </picture>
+            </div>
           </div>
-            <p><a class="hero__button btn" href="#" data-open-modal="feedback">Купить абонемент</a></p>
-            <p><a class="btn visually-hidden" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-          </div>
-          <div class="hero__image">
-            <picture>
-            <source media="(min-width: 768px)" src="./img/tablet__slider-img.png" class="tablet__slider-image">
-            <img src="./img/slider-img.png" alt="slider-img." class="hero__picture">
-          </picture>
-          </div>
-        </div>
-
         </section>
         <section class="gym">
           <div class="container">
-          <div class="gym__wrapper">
-            <div class="gym__information-wrapper">
-              <h1 class="gym__information-title">Тренажерный зал</h1>
-              <h3 class="gym__information-property">Просторный зал площадью 900 кв/м</h3>
-            <p class="gym__information gym__information-text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-            <p class="gym__information-adds gym__information-text">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-          </div>
-            <div class="gym__images">
-              <img src="./img/gym-img.png" alt="gym-img." class="gym__image">
-              <img src="./img/video.png" alt="video-img." class="gym__video">
-              <img src="./img/svg/player-button.svg" alt="player-button." class="gym__player-button" width="100" height="100">
+            <div class="gym__wrapper">
+              <div class="gym__information-wrapper">
+                <h1 class="gym__information-title">Тренажерный зал</h1>
+                <h3 class="gym__information-property">
+                  Просторный зал площадью 900 кв/м
+                </h3>
+                <p class="gym__information gym__information-text">
+                  Supergym – самый большой фитнес центр за Уралом и идеальное
+                  место для укрепления тела и здоровья. Тренажерный зал оснащен
+                  всем необходимым современным оборудованием для всех
+                  спортсменов.
+                </p>
+                <p class="gym__information-adds gym__information-text">
+                  В зале расположены отдельная зона для Crossfit и кардио-зона с
+                  40 тренажерами. Также в фитнес центре есть несколько
+                  оборудованных залов для различных видов групповых занятий.
+                </p>
+              </div>
+              <div class="gym__images">
+                <img
+                  src="./img/gym-img.png"
+                  alt="gym-img."
+                  class="gym__image"
+                />
+                <img
+                  src="./img/video.png"
+                  alt="video-img."
+                  class="gym__video"
+                />
+                <img
+                  src="./img/svg/player-button.svg"
+                  alt="player-button."
+                  class="gym__player-button"
+                  width="100"
+                  height="100"
+                />
+              </div>
             </div>
           </div>
-        </div>
         </section>
 
+        <section class="subscription__wrapper">
+          <h1 class="subscription__title">Абонементы</h1>
+          <ul class="subscription__items">
+            <li class="subscription__item subscription__item--first">
+              <a href="/">1 месяц</a>
+            </li>
+            <li class="subscription__item">
+              <a href="/">6 месяцев</a>
+            </li>
+            <li class="subscription__item">
+              <a href="/">12 месяцев</a>
+            </li>
+          </ul>
+          <span class="subscription__delimitation-bar"></span>
+          <ul class="subscription__prices">
+            <li class="subscription__price">
+              <div class="subscription__price-contains">
+                <h3 class="subscription__price-title">С тренером</h3>
+                <p class="subscription__time">12 занятий</p>
+              </div>
+              <div class="subscription__price-fixed">
+                <h4 class="subscription__price-number">5000</h4>
+                <img
+                  src="img/svg/currency.svg"
+                  alt="price-currency."
+                  class="subscription__price-currency"
+                />
+              </div>
+              <a
+                class="button subscription__button btn"
+                href="#"
+                data-open-modal="feedback"
+                >Купить абонемент</a
+              >
+              <span class="subscription__price-background">5000</span>
+            </li>
+            <li class="subscription__price subscription__price--second">
+              <div class="subscription__price-contains">
+                <h3 class="subscription__price-title">Дневной</h3>
+                <p class="subscription__time">с 8:00 до 17:00</p>
+              </div>
+              <div class="subscription__price-fixed">
+                <h4 class="subscription__price-number">1700</h4>
+                <img
+                  src="img/svg/currency.svg"
+                  alt="price-currency."
+                  class="subscription__price-currency"
+                />
+              </div>
+              <a
+                class="button subscription__button subscription__button--second btn"
+                href="#"
+                data-open-modal="feedback"
+                >Купить абонемент</a
+              >
+              <span class="subscription__price-background">1700</span>
+            </li>
+            <li class="subscription__price">
+              <div class="subscription__price-contains">
+                <h3 class="subscription__price-title">Полный день</h3>
+                <p class="subscription__time">с 8:00 до 22:00</p>
+              </div>
+              <div class="subscription__price-fixed">
+                <h4 class="subscription__price-number">2700</h4>
+                <img
+                  src="img/svg/currency.svg"
+                  alt="price-currency."
+                  class="subscription__price-currency"
+                />
+              </div>
+              <a
+                class="button subscription__button btn"
+                href="#"
+                data-open-modal="feedback"
+                >Купить абонемент</a
+              >
+              <span class="subscription__price-background">2700</span>
+            </li>
+          </ul>
+          <img
+            src="img/subscription__image.png"
+            alt="subscription-image."
+            class="subscription__background-img"
+          />
+        </section>
       </main>
       <footer>
         <div class="container"></div>
@@ -72,7 +206,12 @@
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
           <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <button
+            class="modal__close-btn btn-reset"
+            type="button"
+            aria-label="Закрыть попап"
+            data-close-modal
+          >
             <svg width="15" height="15">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
@@ -81,12 +220,23 @@
       </div>
     </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div
+      class="modal modal--preload modal--fit-content modal--no-scale"
+      data-modal="success"
+    >
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <p class="modal__description">
+            Размер этой модалки зависит от ширины контента,<br />
+            отключена анимация-скейл
+          </p>
+          <button
+            class="modal__close-btn btn-reset"
+            type="button"
+            aria-label="Закрыть попап"
+            data-close-modal
+          >
             <svg width="15" height="15">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>

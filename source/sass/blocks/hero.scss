@@ -1,6 +1,13 @@
 .hero {
   width: 100%;
-  background: linear-gradient(90deg, rgb(28, 52, 119) 0px, rgb(28, 52, 119) 0.01%, rgb(26, 53, 120) 39.11%, rgb(115, 24, 75) 75.5%, rgb(180, 2, 42) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(28, 52, 119) 0px,
+    rgb(28, 52, 119) 0.01%,
+    rgb(26, 53, 120) 39.11%,
+    rgb(115, 24, 75) 75.5%,
+    rgb(180, 2, 42) 100%
+  );
 
   .container {
     display: flex;
@@ -24,15 +31,15 @@
   letter-spacing: 1.62px;
   margin: 0 0 10px 0;
 
-@media (max-width: $vp-1280) {
-  font-size: 42px;
-  letter-spacing: 1.26px;
-}
+  @media (max-width: $vp-1280) {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
 
   @media (max-width: $vp-768) {
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: 0.96px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
   }
 }
 
@@ -48,21 +55,19 @@
   width: 100%;
   margin: 0 0 50px 0;
 
-
   @media (max-width: $vp-1280) {
-  font-size: 72px;
-  line-height: 85px;
+    font-size: 72px;
+    line-height: 85px;
   }
 
   @media (max-width: $vp-768) {
-  font-size: 62px;
-  line-height: 70px;
-  letter-spacing: 1.86px;
+    font-size: 62px;
+    line-height: 70px;
+    letter-spacing: 1.86px;
   }
 }
 
 .hero__info {
-
   flex: 1 1 auto;
   text-align: right;
   display: flex;
@@ -73,7 +78,6 @@
   @media (max-width: $vp-1280) {
     max-width: 324px;
   }
-
 }
 
 .hero__feedback-info {
@@ -92,9 +96,8 @@
   align-items: flex-end;
 }
 
-
 .hero__specific-info {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: right;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
@@ -102,12 +105,11 @@
   font-weight: 400;
   width: 100%;
   max-width: 113px;
+}
 
-  }
-
-.hero__button {
+.button {
   display: flex;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   background: transparent;
   width: 100%;
   max-width: 230px;
@@ -121,19 +123,16 @@
   }
 
   @media (max-width: $vp-768) {
-  max-width: 290px;
-  padding: 22px 0px;
-  flex-direction: column;
-
+    max-width: 290px;
+    padding: 22px 0px;
+    flex-direction: column;
   }
-
 }
 
 .hero__image {
 }
 
 .tablet__slider-image {
-
 }
 
 .hero__picture {
