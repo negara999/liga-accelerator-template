@@ -1564,6 +1564,9 @@ li {
     margin-bottom: 36px;
     width: 100%;
     max-width: 502px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -1576,6 +1579,51 @@ li {
   }
 }
 
+@media (max-width: 768px) {
+  .gym__image {
+    width: 320px;
+    height: 313px;
+  }
+}
+
+.gym__video {
+  position: absolute;
+  right: 35%;
+  bottom: 47%;
+}
+@media (max-width: 1280px) {
+  .gym__video {
+    width: 265px;
+    height: 167px;
+    right: 30%;
+    bottom: 57%;
+  }
+}
+@media (max-width: 768px) {
+  .gym__video {
+    width: 320px;
+    height: 167px;
+    left: 50%;
+    bottom: 54%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.gym__player-button {
+  position: absolute;
+  right: 44%;
+  bottom: 49%;
+}
+@media (max-width: 1280px) {
+  .gym__player-button {
+    width: 72px;
+    height: 72px;
+    right: 42%;
+    bottom: 58%;
+  }
+}
 .subscription__wrapper {
   background-color: #f8f9fc;
   background-size: cover;
@@ -1590,6 +1638,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin-top: 270px;
 }
 
 .subscription__title {
@@ -1611,6 +1660,11 @@ li {
           align-items: center;
   gap: 50px;
   padding: 0;
+}
+@media (max-width: 768px) {
+  .subscription__items {
+    gap: 25px;
+  }
 }
 
 .subscription__item {
@@ -1643,6 +1697,14 @@ li {
   z-index: 10;
   margin-bottom: 120px;
 }
+@media (max-width: 1280px) {
+  .subscription__prices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .subscription__price {
   background: #ffffff;
@@ -1658,6 +1720,26 @@ li {
           align-items: center;
   position: relative;
   padding: 65px 77px;
+}
+@media (max-width: 1280px) {
+  .subscription__price {
+    padding: 65px 117px;
+    height: 100%;
+    max-height: 438px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .subscription__price {
+    width: 290px;
+    padding: 50px 42px;
+    gap: 18px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .subscription__price--second {
@@ -1746,6 +1828,15 @@ li {
           transform: translate(-50%, -50%);
 }
 
+.subscription__time {
+  color: #102654;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
 .subscription__background-img {
   position: absolute;
   top: 62%;
@@ -1754,6 +1845,17 @@ li {
       -ms-transform: rotate(30);
           transform: rotate(30);
   z-index: 1;
+}
+@media (max-width: 1280px) {
+  .subscription__background-img {
+    left: 61%;
+    top: 81%;
+  }
+}
+@media (max-width: 768px) {
+  .subscription__background-img {
+    display: none;
+  }
 }
 
 /* @mixin hover-focus {
